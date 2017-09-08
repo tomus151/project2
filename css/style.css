@@ -1,25 +1,38 @@
 * {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
 .container .header {
   background-image: url("../images/header-bg.jpg");
   background-size: cover;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  color: white; }
   .container .header .opacity {
     background: rgba(0, 0, 0, 0.55);
     background-position: center; }
     .container .header .opacity .spaceLogo {
       height: 155px; }
     .container .header .opacity .logo {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
       justify-content: center; }
     .container .header .opacity .headerNav {
       width: 100%;
       border-bottom: 1px solid white;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-pack: end;
+      -ms-flex-pack: end;
       justify-content: flex-end;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
       flex-direction: column;
       position: fixed; }
       .container .header .opacity .headerNav .navButton {
@@ -29,18 +42,53 @@
         height: 40px;
         background-color: lightgrey;
         border: none;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
         float: right; }
         .container .header .opacity .headerNav .navButton .imgHamNav {
           width: 50%;
           height: 50%; }
-      .container .header .opacity .headerNav .navMenu .navRow {
-        padding: 20px 0 20px 0;
-        text-align: center; }
-        .container .header .opacity .headerNav .navMenu .navRow:first-child {
-          border-top: 1px solid white; }
-        .container .header .opacity .headerNav .navMenu .navRow a {
-          text-decoration: none;
-          color: white; }
+      .container .header .opacity .headerNav .navMenu {
+        display: none; }
+        .container .header .opacity .headerNav .navMenu .navRow {
+          padding: 20px 0 20px 0;
+          text-align: center; }
+          .container .header .opacity .headerNav .navMenu .navRow:first-child {
+            border-top: 1px solid white; }
+          .container .header .opacity .headerNav .navMenu .navRow a {
+            text-decoration: none;
+            color: white; }
+    .container .header .opacity .jwood {
+      margin-top: 50px;
+      text-align: center;
+      width: 100%;
+      font-size: 40px; }
+    .container .header .opacity .scrollDownToSeeMore {
+      font-weight: 700;
+      font-size: 14px;
+      margin-top: 100px;
+      display: block;
+      width: 100%;
+      text-align: center; }
+    .container .header .opacity .arrows {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+      .container .header .opacity .arrows img {
+        -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        transform: rotate(90deg);
+        -webkit-filter: invert(100%);
+        margin-top: 50px;
+        width: 40px;
+        height: 40px; }
