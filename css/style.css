@@ -3,10 +3,44 @@
   padding: 0;
   box-sizing: border-box; }
 
-.headerNav {
-  width: 100%;
-  height: 100px;
-  border-bottom: 1px solid black;
-  display: flex;
-  justify-content: flex-end;
-  position: fixed; }
+.container .header {
+  background-image: url("../images/header-bg.jpg");
+  background-size: cover;
+  background-attachment: fixed; }
+  .container .header .opacity {
+    background: rgba(0, 0, 0, 0.55);
+    background-position: center; }
+    .container .header .opacity .spaceLogo {
+      height: 155px; }
+    .container .header .opacity .logo {
+      display: flex;
+      justify-content: center; }
+    .container .header .opacity .headerNav {
+      width: 100%;
+      border-bottom: 1px solid white;
+      display: flex;
+      justify-content: flex-end;
+      flex-direction: column;
+      position: fixed; }
+      .container .header .opacity .headerNav .navButton {
+        margin: 10px;
+        margin-left: 87vw;
+        width: 50px;
+        height: 40px;
+        background-color: lightgrey;
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        float: right; }
+        .container .header .opacity .headerNav .navButton .imgHamNav {
+          width: 50%;
+          height: 50%; }
+      .container .header .opacity .headerNav .navMenu .navRow {
+        padding: 20px 0 20px 0;
+        text-align: center; }
+        .container .header .opacity .headerNav .navMenu .navRow:first-child {
+          border-top: 1px solid white; }
+        .container .header .opacity .headerNav .navMenu .navRow a {
+          text-decoration: none;
+          color: white; }
